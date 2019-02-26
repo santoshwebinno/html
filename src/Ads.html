@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Dore jQuery</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="font/iconsmind-s/css/iconsminds.css" />
+    <link rel="stylesheet" href="font/simple-line-icons/css/simple-line-icons.css" />
+
+    <link rel="stylesheet" href="css/vendor/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/vendor/fullcalendar.min.css" />
+    <link rel="stylesheet" href="css/vendor/dataTables.bootstrap4.min.css" />
+    <link rel="stylesheet" href="css/vendor/datatables.responsive.bootstrap4.min.css" />
+    <link rel="stylesheet" href="css/vendor/select2.min.css" />
+    <link rel="stylesheet" href="css/vendor/perfect-scrollbar.css" />
+    <link rel="stylesheet" href="css/vendor/owl.carousel.min.css" />
+    <link rel="stylesheet" href="css/vendor/bootstrap-stars.css" />
+    <link rel="stylesheet" href="css/vendor/nouislider.min.css" />
+    <link rel="stylesheet" href="css/vendor/bootstrap-datepicker3.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
+</head>
+
+<body id="app-container" class="menu-default show-spinner">
+    <nav class="navbar fixed-top">
+        <div class="d-flex align-items-center navbar-left col-2 col-sm-4">
+            <a href="#" class="menu-button d-none d-md-block">
+                <svg class="main" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9 17">
+                    <rect x="0.48" y="0.5" width="7" height="1" />
+                    <rect x="0.48" y="7.5" width="7" height="1" />
+                    <rect x="0.48" y="15.5" width="7" height="1" />
+                </svg>
+                <svg class="sub" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 17">
+                    <rect x="1.56" y="0.5" width="16" height="1" />
+                    <rect x="1.56" y="7.5" width="16" height="1" />
+                    <rect x="1.56" y="15.5" width="16" height="1" />
+                </svg>
+            </a>
+
+            <a href="#" class="menu-button-mobile d-xs-block d-sm-block d-md-none">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 17">
+                    <rect x="0.5" y="0.5" width="25" height="1" />
+                    <rect x="0.5" y="7.5" width="25" height="1" />
+                    <rect x="0.5" y="15.5" width="25" height="1" />
+                </svg>
+            </a>
+ 
+        </div>
+
+		<div class="col-sm-4 col-5 text-center sm-text-left">
+        <a class="navbar-logo h4 sm-h4 d-inline-block" href="Dashboard.Default.html">
+            <span class="d-none d-xs-block"><strong>Studio Moderna - Costs</strong></span> 
+			<span class="d-block d-xs-none"><strong>Studio Moderna - Costs</strong></span>
+        </a>
+		</div>
+        <div class="navbar-right col-sm-4 col-5">
+			<div class="dropdown d-inline-block">
+				<button class="btn btn-sm  btn-outline-primary dropdown-toggle mb-1" type="button" id="dropdownMenuButton"
+					data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					Johan Doe
+				</button>
+				<div class="dropdown-menu position-right"  aria-labelledby="dropdownMenuButton">
+					<a class="dropdown-item" href="#">Log Out</a> 
+				</div>
+			</div>
+        </div>
+    </nav>
+    <div class="sidebar">
+        <div class="main-menu">
+            <div class="scroll">
+                <ul class="list-unstyled">
+                    <li>
+                        <a href="#dashboard">
+                           <i class="simple-icon-grid"></i>
+                            <span>Dashboards</span>
+                        </a>
+                    </li>
+                    <li class="active">
+                        <a href="#facebook"> 
+                            <i class="iconsminds-facebook"></i> FB
+                        </a>
+                    </li> 
+                </ul>
+            </div>
+        </div>
+
+          <div class="sub-menu">
+			<div class="scroll">
+			  <ul class="list-unstyled" data-link="dashboard">
+				<li> <a href="Dashboard.Default.html"> <i class="simple-icon-rocket"></i> Default </a> </li> 
+			  </ul>
+			  <ul class="list-unstyled" data-link="facebook">
+				<li> <a href="Accounts.html"> Accounts </a> </li>
+				<li> <a href="Mapping.html"> Mapping </a> </li>
+				<li> <a href="Campaingns.html"> Campaingns </a> </li>
+				<li> <a href="Adsets.html"> Adsets </a> </li>
+				<li class="active"> <a href="Ads.html"> Ads </a> </li>
+				<li> <a href="Ads_Children.html"> Ads Children </a> </li>
+				<li> <a href="Dpa.html"> DPA </a> </li>
+				<li> <a href="Account_cost.html"> Account Costs </a> </li>
+				<li> <a href="Ad_costs.html"> Ad costs </a> </li>
+			  </ul>
+			</div>
+		  </div>
+		</div>
+   <main>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-12">
+					<h1>Ads</h1>
+					<div class="separator mb-5"></div>
+				 </div>
+				 <div class="col-12">
+					<div class="card">
+                        <div class="card-body"> 
+                            <table class="data-table data-table-scrollable">
+                                <thead>
+                                    <tr>
+										<th>Id</th>
+										<th>Add ID</th>
+										<th>Add</th>
+										<th>Link</th>
+										<th>Cex</th> 
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+										  <td>1</td>
+										  <td>1234</td>
+										  <td>Ad 1</td>
+										  <td>http://google.com/</td>
+										  <td>1234</td> 
+                                    </tr> 
+									  <tr>
+										  <td>1</td>
+										  <td>1234</td>
+										  <td>Ad 1</td>
+										  <td>http://google.com/</td>
+										  <td>1234</td> 
+                                    </tr>
+									<tr>
+										  <td>1</td>
+										  <td>1234</td>
+										  <td>Ad 1</td>
+										  <td>http://google.com/</td>
+										  <td>1234</td> 
+                                    </tr>
+									<tr>
+										  <td>1</td>
+										  <td>1234</td>
+										  <td>Ad 1</td>
+										  <td>http://google.com/</td>
+										  <td>1234</td> 
+                                    </tr>
+									<tr>
+										  <td>1</td>
+										  <td>1234</td>
+										  <td>Ad 1</td>
+										  <td>http://google.com/</td>
+										  <td>1234</td> 
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                    </div>
+				 </div>				 
+			</div>
+	    </div>
+   </main>
+
+
+    <script src="js/vendor/jquery-3.3.1.min.js"></script>
+    <script src="js/vendor/bootstrap.bundle.min.js"></script>
+    <script src="js/vendor/Chart.bundle.min.js"></script>
+    <script src="js/vendor/chartjs-plugin-datalabels.js"></script>
+    <script src="js/vendor/moment.min.js"></script>
+    <script src="js/vendor/fullcalendar.min.js"></script>
+    <script src="js/vendor/datatables.min.js"></script>
+    <script src="js/vendor/perfect-scrollbar.min.js"></script>
+    <script src="js/vendor/owl.carousel.min.js"></script>
+    <script src="js/vendor/progressbar.min.js"></script>
+    <script src="js/vendor/jquery.barrating.min.js"></script>
+    <script src="js/vendor/select2.full.js"></script>
+    <script src="js/vendor/nouislider.min.js"></script>
+    <script src="js/vendor/bootstrap-datepicker.js"></script>
+    <script src="js/vendor/Sortable.js"></script>
+    <script src="js/vendor/mousetrap.min.js"></script>
+    <script src="js/dore.script.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>
